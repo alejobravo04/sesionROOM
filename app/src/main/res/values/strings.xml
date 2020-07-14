@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">sesionROOM</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_create">create</string>
+    <string name="title_Create">Create</string>
+    <string name="nombre">Digite el nombre</string>
+    <string name="telefono">Digite número de teléfono</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="title_read"> Read </string>
+    <string name="buscar">Buscar</string>
+    <string name="title_update">update</string>
+    <string name="update">Actualizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="title_delete">delete</string>
+    <string name="read">Read</string>
+    <string name="delete">Eliminar</string>
+</resources>

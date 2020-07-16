@@ -4,19 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.get
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
 import com.alejandrobravo.sesionroom.R
 import com.alejandrobravo.sesionroom.SesionROOM
-import com.alejandrobravo.sesionroom.model.Deudor
-import com.alejandrobravo.sesionroom.model.DeudorDAO
-import kotlinx.android.synthetic.main.fragment_create.*
+import com.alejandrobravo.sesionroom.model.local.Deudor
+import com.alejandrobravo.sesionroom.model.local.DeudorDAO
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.et_cantidad
 import kotlinx.android.synthetic.main.fragment_update.et_nombre
 import kotlinx.android.synthetic.main.fragment_update.et_telefono
-import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class UpdateFragment : Fragment() {
 
@@ -64,10 +60,11 @@ class UpdateFragment : Fragment() {
 
         bt_actualizar.setOnClickListener{
             val deudor = Deudor(
-            idDeudor,
+                idDeudor,
                 et_nombre.text.toString(),
                 et_telefono.text.toString(),
-                et_cantidad.text.toString().toLong())
+                et_cantidad.text.toString().toLong()
+            )
             deudorDAO.actualizarDeudor(deudor)
             et_telefono.visibility= View.GONE
             et_cantidad.visibility = View.GONE

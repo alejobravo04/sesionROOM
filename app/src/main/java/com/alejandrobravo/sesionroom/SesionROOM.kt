@@ -2,7 +2,7 @@ package com.alejandrobravo.sesionroom
 
 import android.app.Application
 import androidx.room.Room
-import com.alejandrobravo.sesionroom.model.DeudorDataBase
+import com.alejandrobravo.sesionroom.model.local.DeudorDataBase
 
 
 class SesionROOM : Application() {
@@ -15,7 +15,7 @@ class SesionROOM : Application() {
 
         database = Room.databaseBuilder(
             this,
-            DeudorDataBase :: class.java,
+            DeudorDataBase:: class.java,
             "misdeudores"
         ).allowMainThreadQueries()
             .build()

@@ -1,4 +1,4 @@
-package com.alejandrobravo.sesionroom.model
+package com.alejandrobravo.sesionroom.model.local
 
 
 import androidx.annotation.ColorInt
